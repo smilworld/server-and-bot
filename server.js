@@ -95,6 +95,8 @@ client.on('guildMemberRemove',member => {
 })
 client.on('message', msg => {
   if (!msg.guild) return;
+  const user = msg.mentions.users.first()
+  if (user == client.user && !msg.content.startsWith(prefix)) return msg.channel.send(`${msg.author}, this bot's prefix is **${prefix}**`)
   if (msg.author.bot) return; // do not reply to other bots
   if (!msg.content.startsWith(prefix)) return;
   var args = msg.content.split(' ').slice(1);
