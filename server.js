@@ -1,5 +1,5 @@
 const WebSocket = require('ws');
-const wss = new WebSocket.Server({port:8080})
+const wss = new WebSocket.Server({port:process.env.PORT})
 var users = {}
 var players = 0
 // https://github.com/lolsuperscratch/smilworld-server
