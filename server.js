@@ -104,9 +104,9 @@ client.on('message', msg => {
     ${prefix}players - Shows the player list.\n
     ${prefix}user [username] - if you play SmilWorld with your username, you will have the role. non-offical servers will not work.\n
     `).then(function () {
-      msg.channel.send("${msg.author}, check your dms!")
+      msg.channel.send(`${msg.author}, check your dms!`)
     }).catch(function () {
-      msg.channel.send("${msg.author}, i can't send you a dm, make sure you allow dm from server members.")
+      msg.channel.send(`${msg.author}, i can't send you a dm, make sure you allow dm from server members.`)
     })
   }
   if (cmd == "players") {
