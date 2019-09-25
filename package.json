@@ -1,0 +1,10 @@
+{
+  "name":"smilworld-srvbot",
+  "scripts":{
+    "start":"node server.js"
+  },
+  "dependencies":{
+    "ws":"*",
+    "discord.js":"*"
+  }
+}
